@@ -32,7 +32,7 @@ int & intVector::append(int val)
 	++size;
 }
 
-int * intVector::Data() const
+int * intVector::c_ptr() const
 {
 	return nullptr;
 }
@@ -60,6 +60,36 @@ int intVector::front() const
 int intVector::back() const
 {
 	return 0;
+}
+
+int intVector::opo(int idx)
+{
+	return 0;
+}
+
+void intVector::clear()
+{
+}
+
+void intVector::erase(int idx)
+{
+}
+
+int intVector::count(int num)
+{
+	return 0;
+}
+
+void intVector::insert(int num, int idx)
+{
+}
+
+void intVector::reserve(int num)
+{
+}
+
+void intVector::compact()
+{
 }
 
 bool intVector::grow(size_t minSize)
