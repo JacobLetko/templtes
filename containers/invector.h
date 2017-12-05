@@ -9,24 +9,33 @@ class intVector
 public:
 	intVector();
 	~intVector();
-	int & at(size_t idx);
+
+	int &operator[](size_t idx);
+	int operator[](size_t idx) const;
+
+	int& at(size_t idx);
 
 	int& append(int val);
 
 	int* c_ptr() const;
-	size_t Capacity() const;
-	size_t Size() const;
+
+	size_t getCapacity() const;
+	size_t getSize() const;
+
 	bool empty() const;
+
 	int front() const;
 	int back() const;
 
-	int opo(int idx);
-	void clear();
-	void erase(int idx);
-	int count(int num);
-	void insert(int num, int idx);
-	void reserve(int num);
-	void compact();
+	void Clear();
+
+	void Erase(size_t idx);
+	int Count(int value);
+	void Insert(size_t idx, int value);
+	void Reserve(size_t newCapacity);
+	void Compact();
+
+	void printVector();
 
 private:
 	bool grow(size_t minSize);
