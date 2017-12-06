@@ -75,7 +75,7 @@ void intLinkedList::pop()
 	intlinkedListNode* iter = head;
 
 	while (iter != nullptr)
-		iter->next;
+		iter = iter->next;
 	delete iter;
 }
 

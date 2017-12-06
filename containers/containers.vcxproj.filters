@@ -35,5 +35,8 @@
     <ClInclude Include="linkedList.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="tLinkedList.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
